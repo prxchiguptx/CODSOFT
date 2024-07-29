@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5em;
+    line-height: 1.6;
+    color: #4858c1;
+    background: url('background_t2.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: #0b0b2c;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.hero-section {
+    display: flex;
+    color: #484ad3;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.cta-button {
+    background: #0e0e73;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.about-section,.services-section, .contact-section {
+    padding: 4rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(11, 15, 120, 0.2);
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 2s ease-out, transform 1s ease-out; 
+
+}
+
+.about-section h2, .services-section h2, .contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.service {
+    margin: 2rem 0;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section form label {
+    margin: 0.5rem 0;
+    
+}
+
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #100f0f;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    background: #f4a261;
+    color: #010101;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.fade-in.show {
+    opacity: 1; 
+    transform: translateY(0); 
+}
